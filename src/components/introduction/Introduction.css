@@ -1,0 +1,100 @@
+.intro-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.name-title {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.name-title span {
+  color: #556cd6;
+}
+
+.role-title {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  margin-top: 20px;
+}
+
+.rocket-ship {
+  display: none;
+  cursor: pointer;
+}
+
+.github-icon {
+  display: block;
+  margin: 10px auto; 
+  width: 30px; 
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.github-icon:hover {
+  transform: scale(1.1); 
+}
+
+
+@media (min-width: 768px) {
+  .intro-section {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .content {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .name-title {
+    font-size: 36px;
+  }
+
+  .role-title {
+    font-size: 24px;
+  }
+
+  .avatar {
+    max-width: 40%;
+    margin-right: 30px;
+  }
+
+  .rocket-ship {
+    display: block; 
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 110px;
+  }
+}
+
+@media (min-width:1440px) {
+  .name-title {
+    font-size: 60px;
+  }
+
+  .role-title {
+    font-size: 32px;
+  }
+
+  .avatar{
+    max-height: 400px;
+    
+  }
+}
